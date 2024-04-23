@@ -62,9 +62,6 @@ export function Intro() {
         {/*<IconLink href="#" icon={BookIcon} className="flex-none">
           Documentation
         </IconLink>*/}
-        <IconLink href="https://github.com/elemgame" icon={GitHubIcon} className="flex-none">
-          GitHub
-        </IconLink>
       </div>
     </>
   )
@@ -76,6 +73,9 @@ export function IntroFooter() {
       Brought to you by{' '}
       <IconLink href="https://twitter.com/ever_guild_net" icon={XIcon} compact>
         Ever Guild
+      </IconLink>
+      <IconLink href="https://github.com/elemgame" icon={GitHubIcon} className="flex-none">
+        GitHub
       </IconLink>
     </p>
   )
