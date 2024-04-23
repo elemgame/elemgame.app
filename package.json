@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build-static": "STATIC=true next build",
+    "release": "bash build.sh && git add docs && git commit -m 'release' && git push",
     "start": "next start",
     "lint": "next lint"
   },
