@@ -37,6 +37,7 @@ export function Button({
       <ButtonInner arrow={arrow}>{children}</ButtonInner>
     </button>
   ) : (
+    // <Link className={className} {...props} href="https://oasis.gallery/collection/0:6002b4bc01fc1457b19ffb0d475b7042e0c49e5bfd265ffc86945a14c3a63dde" passHref={true}>
     <Link className={className} {...props}>
       <ButtonInner arrow={arrow}>{children}</ButtonInner>
     </Link>
