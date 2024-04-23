@@ -65,9 +65,9 @@ export function Intro() {
         <IconLink href="https://github.com/elemgame" icon={GitHubIcon} className="flex-none">
           GitHub
         </IconLink>
-        <IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">
-          RSS
-        </IconLink>
+        {/*<IconLink href="/feed.xml" icon={FeedIcon} className="flex-none">*/}
+        {/*  RSS*/}
+        {/*</IconLink>*/}
       </div>
     </>
   )
