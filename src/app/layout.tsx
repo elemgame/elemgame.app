@@ -23,11 +23,6 @@ const monaSans = localFont({
 export const metadata: Metadata = {
   title: 'Fight on the field of battle',
   description: 'in a game with elements of strategy and luck',
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-    },
-  },
 }
 
 export default function RootLayout({
