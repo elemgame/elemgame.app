@@ -6,23 +6,10 @@ export function SignUpForm() {
   let id = useId()
 
   return (
-    <form className="relative isolate mt-8 flex items-center pr-1">
-      <label htmlFor={id} className="sr-only">
-        Email address
-      </label>
-      {/*<input
-        required
-        type="email"
-        autoComplete="email"
-        name="email"
-        id={id}
-        placeholder="Email address"
-        className="peer w-0 flex-auto bg-transparent px-4 py-2.5 text-base text-white placeholder:text-gray-500 focus:outline-none sm:text-[0.8125rem]/6"
-      />*/}
-      {/*todo: change href*/}
-      <Button className={"w-full flex justify-center items-center text-base"} type="submit" href="https://oasis.gallery/">BUY NOW</Button>
-      {/*<div className="absolute inset-0 -z-10 rounded-lg transition peer-focus:ring-4 peer-focus:ring-sky-300/15" />*/}
-      {/*<div className="absolute inset-0 -z-10 rounded-lg bg-white/2.5 ring-1 ring-white/15 transition peer-focus:ring-sky-300" />*/}
-    </form>
+    <div>
+        <Button className={"w-full flex justify-center items-center text-base"} href="https://oasis.gallery/collection/0:0d16c74a210724fce890494858caa5ef6731cfc34cafc422e97a944cbaf6c042">BUY NOW</Button>
+        <br/>
+        <Button className={"w-full flex justify-center items-center text-base"} href="https://hackmd.io/4Y40u3D7TDSk2Nn5h4TSHA?view">RULES OF THE GAME</Button>
+    </div>
   )
 }
