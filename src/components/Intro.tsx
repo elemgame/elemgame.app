@@ -71,7 +71,7 @@ export function IntroFooter() {
   return (
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
       Brought to you by{' '}
-      <IconLink href="https://twitter.com/ever_guild_net" icon={XIcon} compact>
+      <IconLink href="https://twitter.com/elemgame" icon={XIcon} compact>
         Ever Guild
       </IconLink>
       <IconLink href="https://github.com/elemgame" icon={GitHubIcon} className="flex-none">
