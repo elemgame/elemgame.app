@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 npm run build-static
 mv docs/_next/static docs/static
 rm docs/index.txt
