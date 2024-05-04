@@ -53,6 +53,23 @@ function Telegram(props: React.ComponentPropsWithoutRef<'svg'>) {
     )
 }
 
+function Medium(props: React.ComponentPropsWithoutRef<'svg'>) {
+    return (
+        <svg viewBox="0 0 50 50" aria-hidden="true" fill="currentColor" {...props}>
+            <circle cx="15" cy="25" r="13"/>
+            <path d="M35.5,13c-3.59,0-6.5,5.373-6.5,12c0,1.243,0.102,2.441,0.292,3.568c0.253,1.503,0.662,2.879,1.192,4.065
+	c0.265,0.593,0.56,1.138,0.881,1.627c0.642,0.978,1.388,1.733,2.202,2.201C34.178,36.811,34.827,37,35.5,37s1.322-0.189,1.933-0.539
+	c0.814-0.468,1.56-1.223,2.202-2.201c0.321-0.489,0.616-1.034,0.881-1.627c0.53-1.185,0.939-2.562,1.192-4.065
+	C41.898,27.441,42,26.243,42,25C42,18.373,39.09,13,35.5,13z"/>
+            <path d="M45.5,14c-0.259,0-0.509,0.173-0.743,0.495c-0.157,0.214-0.307,0.494-0.448,0.833c-0.071,0.169-0.14,0.353-0.206,0.551
+	c-0.133,0.395-0.257,0.846-0.37,1.343c-0.226,0.995-0.409,2.181-0.536,3.497c-0.063,0.658-0.112,1.349-0.146,2.065
+	C43.017,23.499,43,24.241,43,25s0.017,1.501,0.051,2.217c0.033,0.716,0.082,1.407,0.146,2.065c0.127,1.316,0.31,2.501,0.536,3.497
+	c0.113,0.498,0.237,0.948,0.37,1.343c0.066,0.198,0.135,0.382,0.206,0.551c0.142,0.339,0.292,0.619,0.448,0.833
+	C44.991,35.827,45.241,36,45.5,36c1.381,0,2.5-4.925,2.5-11S46.881,14,45.5,14z"/>
+        </svg>
+    )
+}
+
 export function Intro() {
     return (
         <>
@@ -70,12 +87,12 @@ export function Intro() {
         you’re ready to commit your work with a single keyboard shortcut. It’s
         fast, beautiful, and completely unnecessary.
       </p>*/}
-      <SignUpForm />
-      <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
-        {/*<IconLink href="#" icon={BookIcon} className="flex-none">
+            <SignUpForm/>
+            <div className="mt-8 flex flex-wrap justify-center gap-x-1 gap-y-3 sm:gap-x-2 lg:justify-start">
+                {/*<IconLink href="#" icon={BookIcon} className="flex-none">
           Documentation
         </IconLink>*/}
-      </div>
+            </div>
     </>
   )
 }
@@ -85,6 +102,7 @@ export function IntroFooter() {
     <p className="flex items-baseline gap-x-2 text-[0.8125rem]/6 text-gray-500">
       <IconLink href="https://t.me/elemgame" icon={Telegram} title="Telegram"></IconLink>
       <IconLink href="https://twitter.com/elemgame" icon={XIcon} title="Twitter aka X"></IconLink>
+      <IconLink href="https://medium.com/@elemgame" icon={Medium} title="Medium"></IconLink>
       <IconLink href="https://github.com/elemgame" icon={GitHubIcon} title="Github"></IconLink>
     </p>
   )
