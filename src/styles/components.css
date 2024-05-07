@@ -1,2 +1,10 @@
 @import './typography.css';
 @tailwind components;
+
+.dark .date-stage {
+    color: #fff;
+}
+
+.light .date-stage {
+    color: #000;
+}
