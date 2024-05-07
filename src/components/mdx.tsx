@@ -50,7 +50,7 @@ function ArticleHeader({ id, date, stage }: { id: string; date: string | Date; s
           <FormattedDate
             date={date}
             stage={stage}
-            className="xl:pointer-events-auto xl:block xl:text-2sm/4 xl:font-medium xl:text-white/50 hidden"
+            className="xl:pointer-events-auto xl:block xl:text-2sm/4 xl:font-medium xl:text-white hidden"
           />
         </Link>
         <div className="h-[0.0625rem] w-3.5 bg-gray-400 lg:-mr-3.5 xl:mr-0 xl:bg-gray-300" />
@@ -61,7 +61,7 @@ function ArticleHeader({ id, date, stage }: { id: string; date: string | Date; s
             <FormattedDate
               date={date}
               stage={stage}
-              className="text-2sm/4 font-extrabold font-mono text-white xl:hidden dark:text-white/50"
+              className="text-2sm/4 font-extrabold font-mono date-stage xl:hidden"
             />
           </Link>
         </div>
