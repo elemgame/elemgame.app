@@ -1,5 +1,13 @@
 {
   "scripts": {
+    "start": "pnpm dist && serve dist",
+    "dist": "pnpm -r build && rm -fr dist && mkdir dist dist/app && cp -r module/site/dist/. dist && cp -r module/app/dist/. dist/app",
+    "release": "pnpm dist && gh-pages --nojekyll --cname elemgame.app --branch release --dist dist",
+    "app": "pnpm --filter app",
     "site": "pnpm --filter site"
+  },
+  "dependencies": {
+    "gh-pages": "^6.1.1",
+    "serve": "^14.2.3"
   }
 }

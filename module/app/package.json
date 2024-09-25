@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0-alpha.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode localhost --host",
+    "build": "tsc && vite build --mode production",
+    "preview": "vite preview --mode localhost"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "pixi.js": "^8.4.1"
+  }
+}
