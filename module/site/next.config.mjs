@@ -15,8 +15,8 @@ const withMDX = nextMDX({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: process.env.STATIC ? 'docs' : 'dist',
-  output:  process.env.STATIC ? 'export' : 'output',
+  distDir: 'dist',
+  output:  'export',
   images: {
     unoptimized: true,
   },

@@ -5,12 +5,12 @@ This agreement is for collaboration, it may not be detailed enough, if it is not
 ## Main flow
 
 ```shell
-git clone git@github.com:elemgame/elemgame-site.git
-cd elemgame-site
+git clone git@github.com:elemgame/elemgame.app.git
+cd elemgame.app
 git checkout -b name-of-feature origin/main
 ```
 
-Coding and testing local see [README.md Development](https://github.com/elemgame/elemgame-site#development)
+Coding and testing local see [README.md Development](https://github.com/elemgame/elemgame.app#development)
 
 > Git history: work log vs recipe https://www.bitsnbites.eu/git-history-work-log-vs-recipe/
 
@@ -35,7 +35,7 @@ git push --set-upstream origin name-of-feature
 Follow by link:
 
 ```shell
-https://github.com/elemgame/elemgame-site/pull/new/name-of-feature
+https://github.com/elemgame/elemgame.app/pull/new/name-of-feature
 ```
 
 ## Update branch from main
