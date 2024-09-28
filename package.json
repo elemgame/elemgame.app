@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "mkcert": "mkcert -install && rm -rf .cert && mkdir .cert && mkcert -key-file .cert/key.pem -cert-file .cert/cert.pem localhost",
     "start": "pnpm dist && serve dist",
     "dist": "pnpm -r build && rm -fr dist && mkdir dist dist/app && cp -r module/site/dist/. dist && cp -r module/app/dist/. dist/app",
     "release": "pnpm dist && gh-pages --nojekyll --cname elemgame.app --branch release --dist dist",

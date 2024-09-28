@@ -14,6 +14,15 @@ pnpm site dev
 pnpm app dev
 ```
 
+### https on localhost
+
+For it need install [mkcert](https://github.com/FiloSottile/mkcert)
+
+```bash
+pnpm mkcert
+pnpm app dev
+```
+
 ## Build
 
 ```bash
