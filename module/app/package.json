@@ -9,9 +9,11 @@
   },
   "devDependencies": {
     "typescript": "^5.5.3",
-    "vite": "^5.4.1"
+    "vite": "^5.4.1",
+    "vite-plugin-static-copy": "^1.0.6"
   },
   "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.1.0",
     "pixi.js": "^8.4.1"
   }
 }

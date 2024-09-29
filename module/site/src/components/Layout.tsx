@@ -1,10 +1,9 @@
 import { useId } from 'react'
 
 import { Intro, IntroFooter } from '@/components/Intro'
-import { StarField } from '@/components/StarField'
 import { ThemeToggle } from '@/components/ThemeToggle'
 
-import bg from '../images/background.jpg'
+import bg from '../../../asset/background.jpg'
 
 function Timeline() {
   let id = useId()

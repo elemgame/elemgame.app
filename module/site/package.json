@@ -38,6 +38,7 @@
     "unist-util-visit": "^5.0.0"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/mdx": "^2.0.13",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.4",
