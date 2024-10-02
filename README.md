@@ -5,6 +5,7 @@
 npm install -g pnpm
 pnpm install
 ```
+- [PixiJS Devtools](https://chromewebstore.google.com/detail/pixijs-devtools/aamddddknhcagpehecnhphigffljadon)
 
 ## Develop
 
@@ -23,8 +24,23 @@ pnpm mkcert
 pnpm app dev
 ```
 
-## Build
+## QA
+
+```bash
+pnpm --recursive format
+pnpm --recursive lint
+```
+
+## Build & release
+
+### Check pre-release
 
 ```bash
 pnpm start
+```
+
+### Release
+
+```bash
+pnpm release
 ```
