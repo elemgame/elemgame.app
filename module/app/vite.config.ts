@@ -1,24 +1,15 @@
-import {defineConfig} from 'vite'
-import {join, resolve} from 'path'
-import {readFileSync, existsSync} from 'fs';
-const isProduction = process.argv.includes('production')
-const rootPath = resolve(__dirname)
-const assetPath = join(resolve(join(rootPath, '..')), 'asset')
-const certPath = join(resolve(join(rootPath, '..', '..')), '.cert')
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';  // Import the React plugin
+import path, { join, resolve } from 'path';
+
+const isProduction = process.argv.includes('production');
+const rootPath = resolve(__dirname);
+const assetPath = path.join(resolve(join(rootPath, '..')), 'asset');
 
 // https://vitejs.dev/config/
-let https = null
-if (existsSync(certPath)) {
-  https = {
-    key: readFileSync(join(certPath, 'key.pem')),
-    cert: readFileSync(join(certPath, 'cert.pem')),
-  }
-}
 export default defineConfig({
-  server: {
-    https
-  },
   plugins: [
+    react(),  // Use React plugin to handle JSX
   ],
   base: isProduction ? '/app/' : '/',
   build: {},
@@ -28,4 +19,4 @@ export default defineConfig({
       '@': rootPath,
     },
   },
-})
+});

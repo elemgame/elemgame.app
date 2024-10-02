@@ -17,7 +17,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* JSX support */
+    "jsx": "react-jsx" // Make sure JSX is set up correctly for React
   },
   "include": ["src"]
 }
