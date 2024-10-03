@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "1.0.0-alpha.1-local",
+  "version": "1.0.0-alpha.1",
   "type": "module",
   "scripts": {
     "dev": "vite --mode localhost --host",
