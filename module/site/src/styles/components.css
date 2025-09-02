@@ -8,3 +8,7 @@
 .light .date-stage {
     color: #000;
 }
+
+.try-game {
+  background: linear-gradient(121deg, #D6AA48 20.51%, #FFE9B1 50.38%, #D6AA48 80.86%);
+}
